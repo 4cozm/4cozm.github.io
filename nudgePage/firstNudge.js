@@ -67,7 +67,7 @@ document.addEventListener("mousemove", function (event) {
           .then((data) => console.log(data))
           .catch((error) => console.error("Error:", error));
 
-        window.location.href = "secondNudge.html";
+        window.location.href = "nudgePage/secondNudge.html";
       }, 2000);
     }, 2000);
 
