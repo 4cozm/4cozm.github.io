@@ -7,7 +7,7 @@ document.addEventListener("mouseover", function () {
   }
   hoverTimer = setTimeout(function () {
     sendVisitData();
-    window.location.href = "../nudgePage/index.html"; //주소가 변경되면 수정해야함
+    window.location.href = "../index.html"; //주소가 변경되면 수정해야함
   }, 5000);
 });
 
