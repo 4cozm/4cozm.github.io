@@ -118,3 +118,16 @@ body {
     cursor: none;
 }
 
+html {
+    scrollbar-width: none;
+}
+
+/* Internet Explorer, Edge */
+html {
+    -ms-overflow-style: none;
+}
+
+/* Chrome, Safari */
+html ::-webkit-scrollbar {
+    display: none;
+}
