@@ -130,4 +130,5 @@ html {
 /* Chrome, Safari */
 html ::-webkit-scrollbar {
     display: none;
+    cursor: none;
 }
