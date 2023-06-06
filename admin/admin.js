@@ -58,10 +58,10 @@ async function testConnection() {
 testConnection();
 
 const translationMap = {
-  etc: "기타안내",
-  individual: "국세개인",
-  certificate: "증명원",
-  corporation: "국세법인",
+  "etc": "기타안내",
+  "individual": "국세개인",
+  "certificate": "증명원",
+  "corporation": "국세법인",
   "tax-card": "세금,카드",
   "1-floor-service": "1층 민원봉사실",
   "1-floor-eres": "1층 전자신고센터",
