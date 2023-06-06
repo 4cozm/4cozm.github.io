@@ -134,3 +134,39 @@ td {
   left:20vw;
   bottom:10vh;
 }
+.form-in-hide{
+  display: none; /*모바일 화면에서만 버튼이 보여야 하기에 버튼 숨김*/
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: azure;
+    }
+    .form-container{
+      display: none;
+    }
+    #seperate-line{
+      display: none;
+    }
+    .form1{
+      bottom:1vh;
+    }
+    .form2{
+      left:50vw;
+      bottom:1vh;
+    }
+    #restoreDefaultData{
+      bottom:1vh;
+    }
+    .form-in-hide{
+      display: block;
+      position:absolute;
+      top:250px;
+      right:1vw;
+    }
+    .form-out{
+      position:absolute;
+      top:50vh;
+    }
+}

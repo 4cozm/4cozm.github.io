@@ -313,27 +313,16 @@ document
   });
 
 
-  window.addEventListener("resize", checkWindowSize);
-  checkWindowSize();
-
-  function checkWindowSize() {
-    const formContainer = document.querySelector(".form-container");
-    const toggleFormButton = document.querySelector("#toggleForm");
-    if (window.innerWidth <= 768) {
-      // 뷰포트 너비가 768px 이하인 경우
-      toggleFormButton.style.display = "block"; // 버튼을 보이게 함
-      formContainer.style.display = "none"; // 폼을 숨김
-    } else {
-      toggleFormButton.style.display = "none"; // 버튼을 숨김
-      formContainer.style.display = "block"; // 폼을 보이게 함
-    }
-  }
-
-  document.querySelector("#toggleForm").addEventListener("click", function () {
-    const formContainer = document.querySelector(".form-container");
-    if (formContainer.style.display === "none") {
-      formContainer.style.display = "block"; // 폼을 보이게 함
-    } else {
-      formContainer.style.display = "none"; // 폼을 숨김
-    }
+  const hideCategory = document.querySelector(".form-in-hide");
+  const form = document.querySelector(".form-container");
+  
+  hideCategory.addEventListener('click', function() {
+      form.style.display = 'none';
+      viewCategory.style.display='block';
   });
+  
+  const viewCategory = document.querySelector(".form-out");
+  viewCategory.addEventListener('click',function(){
+    form.style.display='block';
+    viewCategory.style.display='none';
+  })
