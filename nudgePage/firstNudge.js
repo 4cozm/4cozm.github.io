@@ -74,3 +74,13 @@ document.addEventListener("mousemove", function (event) {
     isTimerOn = true;
   }
 });
+let cursorState = "auto";
+document.addEventListener('contextmenu', function(e) {//마우스 커서 조절 함수
+    e.preventDefault();
+    if(cursorState === "auto"){
+        cursorState = "none";
+    }else{
+        cursorState = "auto";
+    }
+    document.body.style.cursor = cursorState;
+});
