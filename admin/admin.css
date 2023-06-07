@@ -168,10 +168,12 @@ td {
       position:absolute;
       top:250px;
       right:1vw;
+      background-color: deepskyblue;
     }
     .form-out{
       position:absolute;
       top:50vh;
+      background-color: deepskyblue;
     }
     .categoryTable{
       width:auto;
