@@ -8,7 +8,7 @@ document.addEventListener("mouseover", function () {
   hoverTimer = setTimeout(function () {
     sendVisitData();
     window.location.href = "../index.html"; //주소가 변경되면 수정해야함
-  }, 10000);
+  }, 20000);
 });
 
 //hover상태를 유지해서 세부 내용을 보는 페이지
