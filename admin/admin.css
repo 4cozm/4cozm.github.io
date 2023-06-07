@@ -143,6 +143,7 @@ td {
     body {
         background-color: azure;
         width:1000px;
+      margin-bottom:20px;
     }
     .form-container{
       display: none;
